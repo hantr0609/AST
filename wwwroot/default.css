@@ -6,7 +6,7 @@
 body {
   color: black;
   background-color: #fdfdfd;
-  font-family: "Bitsream Vera Sans",Helvetica,Arial,sans-serif;
+  font-family: 'Bitsream Vera Sans', Helvetica, Arial, sans-serif;
 }
 
 h1 {
@@ -21,9 +21,12 @@ h2 {
   font-size: 0.75rem;
   font-weight: normal;
   color: #333;
+  margin: 10px 0 5px 0;
 }
 
-textarea, button, select {
+textarea,
+button,
+select {
   border: 1px solid #ccc;
   background-color: white;
 }
@@ -32,6 +35,28 @@ textarea {
   font-size: 1.1rem;
   width: 99%;
   padding: 3px;
+  margin-bottom: 5px;
+}
+
+button {
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: #3eb5f0;
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+
+button:hover {
+  background-color: #125475;
+}
+
+.input-container {
+  margin-bottom: 10px;
+}
+
+.button-group {
+  margin: 5px 0;
 }
 
 footer {
@@ -43,11 +68,11 @@ footer {
 }
 
 footer a {
-  color: #00B;
+  color: #00b;
   text-decoration: none;
 }
 
-input[type="checkbox"] {
+input[type='checkbox'] {
   vertical-align: auto;
 }
 
@@ -85,15 +110,20 @@ label {
   position: absolute;
   right: 2px;
   top: 2px;
-  color: #BBB;
+  color: #bbb;
   font-size: 0.8em;
 }
 
-#parse-error {
+#parse-error,
+#ml-parse-error {
   color: #666;
   height: 0.7em;
   font-size: 0.7em;
   display: block;
+}
+
+#ml-parse-error {
+  margin-bottom: 10px;
 }
 
 #canvas {
